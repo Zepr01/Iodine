@@ -35,6 +35,12 @@ import { openDB } from "idb";
 import { BareClient } from "@mercuryworkshop/bare-mux";
 import EventEmitter from "events";
 
+const PORT = process.env.PORT || 8080; // Default to 8080 if PORT is not set
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
+
+
 /**
  * @typedef {import('../uv.js').UVConfig} UVConfig
  */

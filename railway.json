@@ -1,0 +1,9 @@
+{
+  "build": {
+    "env": {
+      "PORT": {
+        "required": true
+      }
+    }
+  }
+}
